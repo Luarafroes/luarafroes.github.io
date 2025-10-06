@@ -333,3 +333,13 @@ p {
 }
 
 
+.section1 { background-color: var(--trend-100); }
+.section2 { background-color: var(--trend-200); }
+.section3 { background-color: var(--trend-300); }
+.section4 { background-color: var(--trend-400); }
+.section5 { background-color: var(--trend-500); }
+.section6 { background-color: var(--trend-600); }
+.section7 { background-color: var(--trend-100); }
+.section5 h2, .section5 p { color: var(--white-000); }
+.section6 h2, .section6 p { color: var(--white-000); }
+.section7 h2, .section7 p { color: var(--white-000); }
