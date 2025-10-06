@@ -92,7 +92,7 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-
+body{ background-color: antiquewhite;}
 h1 {
     font-size: var(--fs-xxxl);
     line-height: 1.2;
@@ -117,4 +117,45 @@ p {
     line-height: 1.7;
 	margin-bottom: 12px;
 }
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
+/* Background Image with Reduced Visibility */
+.bg {
+  background-image: url('Windows_10.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Main Content Styling */
+.conteudo {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  color: red;
+}
+
+/* Profile Photo Styling */
+.perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;   /* If you want a perfect circle, use 50% */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+a {color: purple}
