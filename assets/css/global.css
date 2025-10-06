@@ -41,7 +41,82 @@ header, section, footer { margin-left: auto; margin-right: auto; overflow: hidde
 section > *:last-child { margin-bottom: 0 !important }
 
 /*  ====================== HEADER ======================== */
+header {
+    /* Flexbox to centre child div vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Spacing around child div inside hero block */
+    padding: 0 20% 4% 20%;
+    /* Optionally, centre child div horizontally */
+    text-align: center;
+    /* Dark blue */ 
+background-color: transparent;
+}
 
+/* Set minimum height of hero block */
+@media (min-width: 768px) { 
+    header { min-height: 80vh } 
+}
+@media (max-width: 767px) { 
+    header { min-height: 500px } 
+}
+
+.hero-text-container h1, 
+.hero-text-container h2 {
+    line-height: 1.2;
+    color:red;
+}
+
+.hero-text-container h1 {
+    /* Space under h1 and above h2 */
+    margin-bottom: 24px;
+    /* Set main heading to extra large size */
+    font-size: calc(var(--fs-xxxl) * 1.5);
+    /* When text extra large, decrease spacing between characters  */
+    letter-spacing: -4px;
+}
+
+.hero-text-container h2 {
+    /* Optionally, remove default weight of 'bold' from h2 */
+    font-weight: normal;
+    font-size: var(--fs-xl);
+    /* Optionally, change text in h2 to all capital letters */
+    text-transform: uppercase;
+}
+
+
+/* ======== END CSS FOR HERO BLOCK ======== */
+
+.slide-in-top {
+	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+      animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 /* Padding around content: laptops / desktops  */
 @media (min-width: 768px) {
     header { 
@@ -113,9 +188,10 @@ h3 {
 }
 
 p {
-	font-size: var(--fs-base);
+	font-size: var(--fs-md);
     line-height: 1.7;
 	margin-bottom: 12px;
+    color: black;
 }
 /* General Reset */
 body, html {
