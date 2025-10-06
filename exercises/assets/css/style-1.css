@@ -119,6 +119,14 @@ h3 {
     font-family: var(--font-serif);
      color: brown
 }
+h4 {
+    font-size: var(--fs-lg);
+    margin-top: 48px; 
+    margin-bottom: 4px;
+    line-height: 1.2;
+    font-family: var(--font-serif);
+     color: brown
+}
 
 p {
 	font-size: var(--fs-base);
