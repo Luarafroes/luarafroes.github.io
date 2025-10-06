@@ -117,6 +117,9 @@ background-color: transparent;
         opacity: 1;
     }
 }
+
+
+
 /* Padding around content: laptops / desktops  */
 @media (min-width: 768px) {
     header { 

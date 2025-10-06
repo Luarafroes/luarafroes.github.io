@@ -295,6 +295,12 @@ header p {
     text-align: center;
     font-weight:bold
 }
+header p1 { 
+    font-size: var(--fs-sm);
+    color: var(--green-900) ;
+    text-align: center;
+    font-weight:bold
+}
 
 /* Small headings */
 h2 {
