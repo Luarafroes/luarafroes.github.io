@@ -387,5 +387,5 @@ position: relative;
    position: absolute; 
    top: 0; right: 0; bottom: 0; left: 0;  
    z-index: 1;
-   background-image: linear-gradient(rgba(29,38,113,0.7),rgba(195,55,100,0.3));    
+   background-image: linear-gradient(--white-000,rgba(255,255,255,0.3));   
 }
