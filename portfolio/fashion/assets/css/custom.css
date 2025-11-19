@@ -12,4 +12,4 @@
 .theme-dark.section-selector-1 a:hover,
 .theme-dark.section-selector-1 a:active { color: var(--white-000) }
 header h1 { font-size: var(--font-size-xxxl) } 
-body
+body { font-family: 'Playfair Display', serif; }
