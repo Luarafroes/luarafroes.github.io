@@ -1,5 +1,5 @@
 
-nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #1d0c1e }
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #110a11 }
 
 header.theme-dark   { background-color: #1d0c1e }
 
@@ -7,8 +7,9 @@ header.theme-dark  h1 { color: var(--orange-500); }
 
 section.theme-dark   { background-color: #1d0c1e }
 
-footer.theme-dark   { background-color: #1d0c1e }
+footer.theme-dark   { background-color: #110a11 }
 
 
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
