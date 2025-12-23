@@ -97,13 +97,4 @@ header .col-text h2, .col-1 > h3 { line-height: 1.8 }
     border-radius: 8px; /* or 0.25rem for consistency with rem units */
 }
 
-/* Padding around content: mobiles */
-@media (max-width: 767px) {
-    header { 
-        padding-top: 8%;
-        padding-right: 5%;
-        padding-bottom: 0%;
-        padding-left: 5%
-    }
-}
 
