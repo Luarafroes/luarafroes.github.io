@@ -7,11 +7,103 @@ header.theme-dark  h1 { color: var(--orange-600); }
 
 section.theme-dark   { background-color: #222222 }
 
-footer.theme-dark   { background-color: #0A0A0A }
+footer.theme-dark   { background-color: #121212 }
 
 
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 
 
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.col-visual {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* keeps vertical alignment nice */
+}
+
+
+/* figure sizing */
+.col-visual figure {
+    max-width: 450px;
+    margin: 0;
+}
+
+/* image sizing & style */
+.col-visual img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(84, 83, 83, 0.778);
+    display: block;
+}
+
+/* hover animation */
+.hover-link {
+    display: inline-block;
+    transition: transform 0.35s ease;
+}
+
+.hover-link:hover {
+    transform: translateY(-8px);
+}
+
+.hover-link img {
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.hover-link:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+.btn.btn-solid.btn-soft {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.btn.btn-solid.btn-soft:hover {
+    transform: translateY(-6px);
+    background-color: var(--orange-600);
+    color: #fff;
+}
+
+.btn.btn-solid.btn-soft:active {
+    transform: translateY(-2px);
+}
+
+
+.btn.btn-outline.btn-soft {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.btn.btn-outline.btn-soft:hover {
+    transform: translateY(-6px);
+    background-color: var(--orange-600);
+    color: #fff;
+}
+
+.btn.btn-outline.btn-soft:active {
+    transform: translateY(-2px);
+}
+
+.badge {
+    border-radius: 8px; /* or 0.25rem for consistency with rem units */
+}
+
+/* Padding around content: mobiles */
+@media (max-width: 767px) {
+    header { 
+        padding-top: 8%;
+        padding-right: 5%;
+        padding-bottom: 0%;
+        padding-left: 5%
+    }
+}
 
